@@ -1,0 +1,32 @@
+.info-form {
+  margin-bottom: 0.5rem;
+}
+
+.info-container {
+  width: 100%;
+}
+
+.info-container label {
+  display: block;
+  margin: 0.5rem 0;
+  font: inherit;
+  font-weight: bold;
+}
+
+.info-container input {
+  font: inherit;
+  display: block;
+  width: 100%;
+  line-height: 1rem;
+  border: 1px solid #ccc;
+  padding: 0.15rem;
+}
+
+.info-container input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
+
+.info-form__actions {
+  text-align: left;
+}
