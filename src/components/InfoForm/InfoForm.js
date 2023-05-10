@@ -17,6 +17,13 @@ const InfoForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
+    if (currentUsername.trim().length === 0 || currentAge.trim().length === 0) {
+      props.onSetError({
+        title: "Invalid input",
+        message: "Please enter a valid name and age (non-empty values)",
+      });
+      return;
+    }
     props.onAddNewData(currentUsername, currentAge);
 
     setCurrentAge("");
